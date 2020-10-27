@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 public class SpuRepository {
 
     
-    private 
 
     
 }
