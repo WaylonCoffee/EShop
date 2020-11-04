@@ -1,4 +1,6 @@
-package com.qingala.admin.product;
+package com.qingala.admin.domain.product.model;
+
+import java.io.Serializable;
 
 import javax.validation.constraints.Size;
 
@@ -12,7 +14,7 @@ import lombok.ToString;
 @Setter
 @ToString
 @EqualsAndHashCode(exclude = "order")
-public class Spec {
+public class Spec implements Serializable{
     
     @Size(max=10, min=1, message = "规格项字符数必须在1-10")
     private String key;

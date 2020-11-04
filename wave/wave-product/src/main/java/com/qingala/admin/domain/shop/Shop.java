@@ -1,4 +1,4 @@
-package com.qingala.admin.shop;
+package com.qingala.admin.domain.shop;
 
 import javax.validation.constraints.NotNull;
 

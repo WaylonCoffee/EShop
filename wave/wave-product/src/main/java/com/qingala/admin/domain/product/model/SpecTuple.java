@@ -1,4 +1,5 @@
-package com.qingala.admin.product;
+package com.qingala.admin.domain.product.model;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,8 +8,14 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Data
+@NoArgsConstructor
+@Getter
+@Setter
 public class SpecTuple {
 
     @NotNull

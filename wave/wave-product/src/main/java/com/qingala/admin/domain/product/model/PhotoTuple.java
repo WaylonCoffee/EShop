@@ -1,14 +1,21 @@
 
-package com.qingala.admin.product;
+package com.qingala.admin.domain.product.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-public class PhotoTuple {
+@Getter
+@Setter
+@ToString
+public class PhotoTuple  {
 
     @NotNull(message = "图片列表不能为空")
     @Size(max = 10, min = 1, message = "图片列表数量必须在1-10")

@@ -1,4 +1,4 @@
-package com.qingala.admin.category;
+package com.qingala.admin.domain.category;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
