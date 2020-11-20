@@ -2,26 +2,18 @@ package com.qingala.admin.domain.product.model;
 
 import java.math.BigDecimal;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
 import com.vladmihalcea.hibernate.type.json.JsonStringType;
 
-import org.hibernate.annotations.Type;
-import org.hibernate.annotations.TypeDef;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
 
-@Table
-@Entity
-@TypeDef(name = "json", typeClass = JsonStringType.class)
 @NoArgsConstructor
 @AllArgsConstructor
 public class Sku {
@@ -30,13 +22,10 @@ public class Sku {
     private String shopId;
     @NotNull(message = "spuID不能为空")
     private String spuId;
-    @Id
     @NotNull(message = "skuID不能为空")
     private String skuId;
     
     @NotNull(message = "规格组不能为空")
-    @Type(type = "json")
-    @Column(columnDefinition = "json" )
     private SpecTuple specTuple;
 
     @NotNull(message = "条码列表不能为空")
