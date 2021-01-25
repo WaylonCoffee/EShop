@@ -4,7 +4,8 @@ import com.qingala.wave.common.utils.ErrorCode;
 
 public enum ProductErrorCode implements ErrorCode{
     
-    SPU_NOT_FOUND(404,"没有找到该商品");
+    SPU_NOT_FOUND(404,"没有找到该商品"),
+    CATEGORY_NOT_FOUND(404,"没有找到该分类");
 
     private int status;
     private String message;

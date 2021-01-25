@@ -21,4 +21,8 @@ public class Category {
 
     private int order;
 
+    public static Category create(String id,String name, int order) {
+        return new Category(id,name, order);
+    } 
+
 }

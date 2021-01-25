@@ -26,14 +26,13 @@ class ShopAdminApplicationTests {
 	@Autowired
 	private SpuService spuService;
 
-
+	
 
 
 	@Test
 	void contextLoads() {
 	}
-
-
+	
 	@Test
 	public void test(){
 

@@ -12,7 +12,6 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import static com.google.common.collect.ImmutableMap.of;
 import static com.google.common.collect.Maps.newHashMap;
@@ -33,7 +32,6 @@ public class SpuRepository{
     private final String SELECT_SPU_SQL = "select content from spu limit :limit offset :offset;";
     private final String COUNT_SPU_SQL = "select count(1) from spu;";
 
-    
     public void add(Spu spu){
         template.update(INSERT_SPU_SQL, of("id",spu.getSpuId(),"content",mapper.writeValueAsString(spu)));
     }
